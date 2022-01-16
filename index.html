@@ -989,16 +989,9 @@ Harshada is very good at adapting to new technologies and her learning curve is 
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-<script type="text/javascript"> 
-    function initReload() 
-    { window.onload = 
-    function () 
-    { if (! localStorage.justOnce) 
-    { localStorage.setItem("justOnce", "true"); window.location.reload(); } 
-    } } 
-    </script>
 
-    <!-- <script type='text/javascript'>
+
+    <script type='text/javascript'>
 
         (function()
         {
@@ -1007,24 +1000,14 @@ Harshada is very good at adapting to new technologies and her learning curve is 
             if( !localStorage.getItem('firstLoad'))
             {
               localStorage['firstLoad'] = true;
-              localStorage['secLoad'] = false;
               window.location.reload();
             }  
-            else if(!localStorage.getItem('firstLoad')==true)
+            else
               localStorage.removeItem('firstLoad');
-
-            if( !localStorage.getItem('secLoad'))
-            {
-              localStorage['secLoad'] = true;
-              
-              window.location.reload();
-            }  
-            else if(!localStorage.getItem('secLoad')==true)
-              localStorage.removeItem('secLoad');
           }
         })();
         
-        </script> -->
+        </script>
 </body>
 
 </html>
