@@ -787,6 +787,8 @@ a:focus {
     transition: 1s;
 }
 
+
+.service .service-item:hover .service-text ul,
 .service .service-item:hover .service-text h3,
 .service .service-item:hover .service-text p {
     color: #ffffff;
