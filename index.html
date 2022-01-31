@@ -1007,6 +1007,23 @@ Harshada is very good at adapting to new technologies and her learning curve is 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
+ <script type="text/javascript">
+            //put this somewhere in "show.html"
+            //using window onload event to run function
+            //so function runs after all content has been loaded.
+            //After refresh this entire script will run again.
+            window.onload = function () {
+                if( window.localStorage )
+          
+            if( !localStorage.getItem('firstLoad'))
+            {
+              localStorage['firstLoad'] = true;
+              window.location.reload();
+            }  
+            else
+              localStorage.removeItem('firstLoad');
+            };
+        </script>
 
    
 </body>
